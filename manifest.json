@@ -1,0 +1,12 @@
+{
+    "name": "月残業時間を表示",
+    "description": "KOTの「日数集計」の隣に、残業時間の欄を追加するChrome拡張",
+    "version": "0.1",
+    "manifest_version": 2,
+    "content_scripts": [
+      {
+        "matches": ["https://s3.kingtime.jp/admin/*"],
+        "js": ["content_script.js"]
+      }
+    ]
+  }
